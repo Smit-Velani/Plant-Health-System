@@ -207,23 +207,6 @@ python model/train.py \
 
 ---
 
-## 📝 Resume Bullets
-
-```
-• Deployed a plant health prediction system achieving 89% diagnostic 
-  accuracy across 15 disease classes and 3 plant species using 
-  MobileNetV2 Transfer Learning CNN.
-
-• Built OpenCV preprocessing pipeline including image denoising, 
-  HSV-based green/lesion coverage analysis, Canny edge detection 
-  and Laplacian texture scoring.
-
-• Deployed end-to-end Flask web application with drag-and-drop 
-  interface, real-time CNN inference and treatment recommendations.
-```
-
----
-
 ## 👤 Author
 
 **Smit Velani**
