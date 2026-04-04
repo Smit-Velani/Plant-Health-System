@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.h5
+*.pkl
+static/uploads/*
+!static/uploads/.gitkeep
+data/
+.env
+*.log

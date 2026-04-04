@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlantScan AI — Plant Health Prediction System</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────────────── -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">🌿</span>
+      <span class="logo-text">PlantScan <span class="logo-accent">AI</span></span>
+    </div>
+    <nav class="nav">
+      <span class="nav-badge">MobileNetV2</span>
+      <span class="nav-badge">15 Classes</span>
+      <span class="nav-badge">3 Plants</span>
+      <span class="nav-badge nav-badge--green">● Live</span>
+    </nav>
+  </div>
+</header>
+
+<!-- ── Hero ────────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">Plant Health Prediction System</h1>
+    <p class="hero-sub">Upload a leaf image — our CNN model instantly detects diseases across <strong>15 disease classes</strong> in Pepper, Potato & Tomato plants using deep learning & computer vision.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-val">15</span><span class="stat-lbl">Disease Classes</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-val">3</span><span class="stat-lbl">Plants Covered</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-val">89%</span><span class="stat-lbl">Accuracy</span></div>
+    
+    </div>
+  </div>
+</section>
+
+<!-- ── Main ────────────────────────────────────────────────────────────────── -->
+<main class="main">
+  <div class="container">
+
+    <!-- Upload Panel -->
+    <div class="panel upload-panel" id="uploadPanel">
+      <div class="panel-header">
+        <h2 class="panel-title">🔬 Analyse Leaf</h2>
+        <p class="panel-sub">Supports JPG, PNG up to 16MB</p>
+      </div>
+
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-icon">📷</div>
+        <p class="drop-text">Drag & drop a leaf image here</p>
+        <p class="drop-or">— or —</p>
+        <label class="btn btn--primary" for="fileInput">Choose Image</label>
+        <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" hidden/>
+      </div>
+
+      <!-- Preview -->
+      <div class="preview-wrap hidden" id="previewWrap">
+        <img id="previewImg" src="" alt="Preview" class="preview-img"/>
+        <div class="preview-info">
+          <span id="previewName" class="preview-name"></span>
+          <span id="previewSize" class="preview-size"></span>
+        </div>
+        <button class="btn btn--primary btn--full" id="analyseBtn">
+          <span id="btnText">🔍 Analyse Plant</span>
+          <span id="btnSpinner" class="spinner hidden"></span>
+        </button>
+        <button class="btn btn--ghost btn--full" id="resetBtn">↺ Upload Another</button>
+      </div>
+    </div>
+
+    <!-- Results Panel -->
+    <div class="panel results-panel hidden" id="resultsPanel">
+
+      <!-- Disease card -->
+      <div class="result-card" id="resultCard">
+        <div class="result-header">
+          <div>
+            <div class="result-plant" id="resultPlant"></div>
+            <div class="result-disease" id="resultDisease"></div>
+          </div>
+          <div class="result-badge" id="resultBadge"></div>
+        </div>
+
+        <div class="confidence-bar-wrap">
+          <div class="confidence-label">
+            <span>Confidence</span>
+            <span id="confidenceVal" class="confidence-val"></span>
+          </div>
+          <div class="confidence-bar">
+            <div class="confidence-fill" id="confidenceFill"></div>
+          </div>
+        </div>
+
+        <!-- Info grid -->
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-label">⚠️ Severity</div>
+            <div class="info-val" id="infoSeverity"></div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">💊 Treatment</div>
+            <div class="info-val" id="infoTreatment"></div>
+          </div>
+          <div class="info-item info-item--full">
+            <div class="info-label">🛡️ Prevention</div>
+            <div class="info-val" id="infoPrevention"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image features -->
+      <div class="features-card">
+        <h3 class="features-title">📊 Image Analysis (OpenCV)</h3>
+        <div class="features-grid" id="featuresGrid"></div>
+      </div>
+
+      <!-- Top 5 predictions -->
+      <div class="top5-card">
+        <h3 class="top5-title">🏆 Top 5 Predictions</h3>
+        <div id="top5List" class="top5-list"></div>
+      </div>
+
+      <!-- Uploaded image -->
+      <div class="uploaded-card">
+        <h3 class="uploaded-title">🖼️ Uploaded Image</h3>
+        <img id="uploadedImg" src="" alt="Uploaded" class="uploaded-img"/>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ── Footer ───────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <p>PlantScan AI — IBM SkillsBuild Data Analytics Intern Project &nbsp;·&nbsp; Built with Python · Flask · TensorFlow · OpenCV · MobileNetV2</p>
+  <p class="footer-sub">Smit Velan &nbsp;·&nbsp; MS Data Science, Northeastern University</p>
+</footer>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
