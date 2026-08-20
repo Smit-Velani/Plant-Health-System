@@ -6,7 +6,7 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
-> **IBM SkillsBuild — Data Analytics Intern Project (CSRBOX) | Jun 2024 – Aug 2024**
+> **IBM SkillsBuild — Data  Science Intern Project (CSRBOX) | Jun 2024 – Aug 2024**
 
 An end-to-end plant disease detection web application powered by **MobileNetV2 Transfer Learning CNN** and **OpenCV** image preprocessing. Upload any leaf image and get an instant diagnosis with **89% accuracy** across 15 disease classes in 3 plant species.
 
