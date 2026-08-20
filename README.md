@@ -1,4 +1,5 @@
 # 🌿 PlantScan AI — Plant Health Prediction System
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
@@ -6,7 +7,7 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
-> **IBM SkillsBuild — Data  Science Intern Project (CSRBOX) | Jun 2024 – Aug 2024**
+> **IBM SkillsBuild — Data Science Intern Project (CSRBOX) | Jun 2024 – Aug 2024**
 
 An end-to-end plant disease detection web application powered by **MobileNetV2 Transfer Learning CNN** and **OpenCV** image preprocessing. Upload any leaf image and get an instant diagnosis with **89% accuracy** across 15 disease classes in 3 plant species.
 
@@ -27,8 +28,8 @@ Upload a leaf photo → Get instant disease diagnosis with treatment recommendat
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/plant-health-prediction.git
-cd plant-health-prediction
+git clone https://github.com/Smit-Velani/Plant-Health-System.git
+cd Plant-Health-System
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -210,7 +211,7 @@ python model/train.py \
 ## 👤 Author
 
 **Smit Velani**
-Data Analytics Intern — IBM SkillsBuild (CSRBOX) | Jun 2024 – Aug 2024
+Data Science Intern — IBM SkillsBuild (CSRBOX) | Jun 2024 – Aug 2024
 
 ---
 
